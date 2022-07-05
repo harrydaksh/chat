@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap');
+body {
+    background-color: #ccc;
+    font-family: 'Roboto', sans-serif;
+}
+
+.chatApp {
+    width: 30%;
+    background-color: #fff;
+    margin: 2rem auto;
+    height: 80vh;
+    border: 3px solid lightblue;
+    border-radius: 3rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('./teahub.io-wallpaper-for-whatsapp-chat-707627.jpg');
+}
+
+.heading {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.send {
+    /* border: 1px solid; */
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    background-color: white;
+}
+
+input {
+    border: none;
+    background-color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    padding: 5px;
+    background: darkorchid;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.right {
+    margin-left: auto;
+    background-color: #ccc;
+}
+
+.left {
+    text-align: left;
+    background-color: #03C03C;
+}
+
+.chat_name {
+    margin: 5px;
+    font-weight: 500;
+}
+
+.right .chat_txt {
+    margin-left: auto;
+}
+
+.left .chat_txt {
+    padding: 5px;
+    margin-right: auto;
+    border-radius: 0 10px 10px 10px;
+}
+
+.chat {
+    max-width: 14rem;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 11px;
+}
+
+.chatsBox {
+    height: 29rem;
+    overflow: auto;
+}
+
+.hide {
+    display: none;
+}
+
+.chat_login {
+    margin-top: 50%;
+}
+
+.chat_left {
+    background-color: #ED2939;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.chat_join {
+    background-color: #8FBC8B;
+    padding: 5px;
+    color: black;
+    border-radius: 5px;
+    margin: 5px;
+}

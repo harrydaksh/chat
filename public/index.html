@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chat with</title>
+</head>
+
+<body>
+    <div class="chatApp">
+        <div class="chat_login">
+            <div class="send">
+                <input id="join_chat" placeholder="type ur name here...." type="text">
+                <button id="join">Join chat</button>
+            </div>
+        </div>
+        <div class="chat_content hide">
+            <div class="chatbox">
+                <h1 class="heading">Chat App</h1>
+                <div class="chatsBox">
+                    <!-- <div class="chat right">
+                        <div class="chat_name">Harry</div>
+                        <span class="chat_txt"> right text</span>
+                    </div>
+                    <div class="chat left">
+                        <div class="chat_name">daksh</div>
+                        <span class="chat_txt"> right text</span>
+                    </div> -->
+                    <!-- <div class="chat_join">sumit join the chat</div> -->
+                    <!-- <div class="chat_left">harry left the chat</div> -->
+
+                </div>
+            </div>
+            <div class="chatinputbox">
+                <div class="send">
+                    <input id="chat_input" placeholder="type something here...." type="text">
+                    <button id="send">send -></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.5.0/socket.io.js" integrity="sha512-ttqbKrGZiTtSLguBZ2xNvZrhUv02IO/TRq5U6TG5TK90wbaXWup5kIJ1A1tLzjOk5Mea/G4seVNrU+lwTLfAzA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io.connect("http://localhost:3000")
+    </script>
+    <script src="script.js"></script>
+    <script src="socket.js"></script>
+</body>
+
+</html>
